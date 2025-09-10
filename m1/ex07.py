@@ -7,7 +7,6 @@ if renda > 0:
 else:
     percentualDivida = 100  
 
-# Classificação de risco
 if renda < 2000 and percentualDivida > 50:
     risco = "Alta"
 elif (2000 <= renda <= 5000) or (30 <= percentualDivida <= 50):
