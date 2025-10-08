@@ -17,7 +17,7 @@ for carta in respostas:
 for i in range(3): 
     if respostas[i] == 'C' and respostas[i+1] == 'D':
         pontos += 5
-        break 
+        break
 
 if pontos > 50:
     pontos = 50

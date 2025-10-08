@@ -11,7 +11,7 @@ else:
         dias_mes = 31
     elif mes in [4, 6, 9, 11]:
         dias_mes = 30
-    else:  # Fevereiro
+    else: 
         dias_mes = 29 if bissexto else 28
 
     if 1 <= dia <= dias_mes:

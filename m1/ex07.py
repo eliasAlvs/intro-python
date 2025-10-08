@@ -7,6 +7,7 @@ if renda > 0:
 else:
     percentualDivida = 100  
 
+print(percentualDivida)
 if renda < 2000 and percentualDivida > 50:
     risco = "Alta"
 elif (2000 <= renda <= 5000) or (30 <= percentualDivida <= 50):
@@ -16,5 +17,4 @@ elif renda > 5000 and percentualDivida < 30:
 else:
     risco = "Médio-baixo"
 
-# Saída
 print(f"Risco: {risco}")
