@@ -42,4 +42,4 @@ def ex09() -> None:
     """
     vip = bool(int(input("Você é um cliente VIP?(0-1)")))
     precoProduto = float(input("Digite o preço do produto: "))
-    print("O preço com desconto é: " + calculaPrecoFinal(vip, precoProduto))
+    print("O preço com desconto é: " + str(calculaPrecoFinal(vip, precoProduto)))

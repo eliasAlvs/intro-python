@@ -31,6 +31,7 @@ def verificarBissexto(dia: int, mes: int, ano: int) -> str:
 
         if 1 <= dia <= dias_mes:
             return "Data válida."
+        return "Data inválida"
 
 def ex05() -> None:
     """

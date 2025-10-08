@@ -44,4 +44,4 @@ def ex08() -> None:
     for i in range(4):
         carta = input(f"Escolha a carta {i+1} (A, B, C ou D): ").strip().upper()
         respostas.append(carta)
-    print("Sua pontuação final é: " + calculaPontos(respostas))
+    print("Sua pontuação final é: " + str(calculaPontos(respostas)))

@@ -44,6 +44,7 @@ def ex03() -> None:
         None
     """
     peso = float(input("Digite o seu peso: "))
-    altura = float(input("Digite a sua altura (em cm): ")) / 10
+    altura = float(input("Digite a sua altura (em cm): ")) / 100
+
     imc = peso / (altura * altura)
     print(verificarPeso(imc))
