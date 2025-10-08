@@ -11,7 +11,7 @@ while continuar:
         case 3:
             utils.ex03()
         case 4:
-            utils.x04()
+            utils.ex04()
         case 5:
             utils.ex05()
         case 6:
@@ -25,8 +25,8 @@ while continuar:
         case 10:
             utils.ex10()
         case _:
-            print("Digite uma opção válida (1-10)!")
+            print("Digite uma opção válida(1-10)!")
             continue
-
-    continuar = bool(input("Você deseja continuar? (Não = 0 / Sim = 1)"))
+        
+    continuar = bool(int(input("Você deseja continuar? (Não = 0 / Sim = 1)")))
 
