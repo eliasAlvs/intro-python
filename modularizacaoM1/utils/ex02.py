@@ -31,7 +31,7 @@ def verificarTriangulo(a: float, b: float, c: float) -> str:
 def ex02() -> None:
     """
     Lê os comprimentos dos três lados de um triângulo, determina seu tipo
-    utilizando a função verificar_triangulo() e exibe o resultado.
+    utilizando a função verificarTriangulo() e exibe o resultado.
 
     Returns:
         None

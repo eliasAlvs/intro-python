@@ -32,7 +32,7 @@ def verificarPeso(imc: float) -> str:
 def ex03() -> None:
     """
     Lê o peso e a altura do usuário, calcula o IMC e exibe a classificação
-    correspondente utilizando a função verificar_peso().
+    correspondente utilizando a função verificarPeso().
 
     Fórmula:
         IMC = peso / (altura ** 2)
