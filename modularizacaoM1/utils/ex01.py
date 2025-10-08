@@ -1,4 +1,4 @@
-def calcular_bonus(salario: int, tempo_empresa: int) -> int:
+def calcularBonus(salario: int, tempo_empresa: int) -> int:
     """
     Calcula o percentual de bônus de um funcionário com base no salário e no tempo de empresa.
 
@@ -26,10 +26,15 @@ def calcular_bonus(salario: int, tempo_empresa: int) -> int:
 
     return bonus
 
+def ex01() -> None:
+    """
+    Solicita o salário e o tempo de empresa do funcionário, calcula o bônus
+    utilizando a função calcular_bonus() e exibe o resultado.
 
-# Exemplo de uso:
-salario = int(input("Digite o seu salário: "))
-tempo_empresa = int(input("Digite seu tempo de empresa (anos): "))
-
-bonus = calcular_bonus(salario, tempo_empresa)
-print(f"Seu bônus é {bonus}%")
+    Returns:
+        None
+    """
+    salario = int(input("Digite o seu salário: "))
+    tempo_empresa = int(input("Digite seu tempo de empresa (anos): "))
+    bonus = calcularBonus(salario, tempo_empresa)
+    print(f"Seu bônus é {bonus}%")
