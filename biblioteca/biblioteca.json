@@ -1,0 +1,74 @@
+{
+    "livros": [
+        {
+            "titulo": "Divergente",
+            "autor": "Veronica Roth",
+            "anoPublicacao": 2012,
+            "nExemplares": 10
+        },
+        {
+            "titulo": "Diário de um banana",
+            "autor": "Jeff Kinney",
+            "anoPublicacao": 2007,
+            "nExemplares": 5
+        },
+        {
+            "titulo": "Harry Potter e a Pedra Filosofal",
+            "autor": "J.K. Rowling",
+            "anoPublicacao": 2000,
+            "nExemplares": 9
+        },
+        {
+            "titulo": "Almanaque da Turma da Mônica",
+            "autor": "Maurício de Souza",
+            "anoPublicacao": 2021,
+            "nExemplares": 10
+        },
+        {
+            "titulo": "Insurgente ",
+            "autor": "Veronica Roth",
+            "anoPublicacao": 2013,
+            "nExemplares": 5
+        }
+    ],
+    "usuarios": [
+        {
+            "nome": "Eliza Marques",
+            "cpf": "000.000.000-00"
+        },
+        {
+            "nome": "Luiza Helena",
+            "cpf": "111.111.111-11"
+        },
+        {
+            "nome": "Maria Joséfina",
+            "cpf": "222.222.222-22"
+        },
+        {
+            "nome": "José Batista",
+            "cpf": "333.333.333-33"
+        }
+    ],
+    "emprestimos": [
+        {
+            "usuario": "000.000.000-00",
+            "livro": "Almanaque da Turma da Mônica"
+        },
+        {
+            "usuario": "000.000.000-00",
+            "livro": "Diário de um banana"
+        },
+        {
+            "usuario": "000.000.000-00",
+            "livro": "Divergente"
+        },
+        {
+            "usuario": "111.111.111-11",
+            "livro": "Almanaque da Turma da Mônica"
+        },
+        {
+            "usuario": "111.111.111-11",
+            "livro": "Divergente"
+        }
+    ]
+}
