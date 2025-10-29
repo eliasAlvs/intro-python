@@ -3,7 +3,13 @@ from livro import *
 from emprestimo import *
 from persistencia import *
 
-def exibir_menu():
+def exibir_menu() -> str:
+    """
+    Função para exibir o menu de opções e retorna uma opção.
+
+    Returns:
+        str: retorna a opção escolhida.
+    """
     print("\n---- SISTEMA DE BIBLIOTECA ----")
     print("1. Cadastrar livro")
     print("2. Cadastrar usuário")
@@ -14,7 +20,10 @@ def exibir_menu():
     print("0. Sair e salvar")
     return input("Escolha uma opção: ")
 
-def opcao1():
+def opcao1() -> None:
+    """
+    Função para receber os dados do livro e realizar o seu cadastro.
+    """
     print("\n------ CADASTRO DE LIVRO ------")
     titulo = input("Título: ")
     autor = input("Autor: ")
@@ -23,14 +32,20 @@ def opcao1():
     gerenciador_livros.cadastrar_livro(Livro(titulo, autor, anoPublicacao, nExemplares))
     print("✅LIVRO CADASTRADO✅")
 
-def opcao2():
+def opcao2() -> None:
+    """
+    Função para receber os dados do usuário e realizar o seu cadastro.
+    """
     print("\n----- CADASTRO DE USUÁRIO -----")
     nome = input("Nome: ")
     cpf = input("CPF: ")
     gerenciador_usuarios.adicionar_usuario(Usuario(nome, cpf))
     print("✅USUÁRIO CADASTRADO✅")
 
-def opcao3():
+def opcao3() -> None:
+    """
+    Função para receber os dados do usuário e livro e realizar um emprestimo.
+    """
     print("\n------- EMPRESTAR LIVRO -------")
     cpf = input("CPF do Usuário: ")
     titulo = input("Título do Livro: ")
@@ -44,7 +59,10 @@ def opcao3():
     else:
         print("❌USUÁRIO OU LIVRO NÃO ENCONTRADO❌")
 
-def opcao4():
+def opcao4() -> None:
+    """
+    Função para receber os dados de um usuário e livro e realizar devolução do livro.
+    """
     print("\n------- DEVOLVER LIVRO --------")
     cpf = input("CPF do usuário: ")
     titulo = input("Título do livro: ")
@@ -54,7 +72,10 @@ def opcao4():
     else:
         print("❌NÃO FOI POSSÍVEL DEVOLVER O LIVRO❌")
 
-def opcao5():
+def opcao5() -> None:
+    """
+    Função para receber titulo ou nome de um autor de um livro e realizar a sua busca.
+    """
     print("\n------- CONSULTAR LIVROS ------")
     tituloOuAutor = input("Digite o título ou Autor:")
     livro_consultado = gerenciador_livros.consultar_livro(tituloOuAutor)
@@ -71,7 +92,10 @@ def opcao5():
     else:
         print("❌NENHUM LIVRO ENCONTRADO❌")
 
-def opcao6():
+def opcao6() -> None:
+    """
+    Função para listar os empréstimos de um usuário.
+    """
     print("\n------- LISTAR EMPRÉSTIMO DE UM USUÁRIO -------")
     cpf = input("CPF do usuário: ")
     usuario = gerenciador_usuarios.buscar_por_cpf(cpf)
@@ -83,7 +107,13 @@ def opcao6():
     else:
         print("❌USUÁRIO NÃO ENCONTRADO❌")
     
-def opcao0():
+def opcao0() -> dict:
+    """
+    Função para sair e salvar os dados cadastrados no sistema.
+
+    Returns:
+        dict: retorna o dicionário de dados dos livros, usuarios e emprestimos.
+    """
     print("\n------- SAIR E SALVAR -------")
     dados = {
         "livros": [
