@@ -132,7 +132,7 @@ def opcao0() -> dict:
     print("✅DADOS SALVOS COM SUCESSO. FIM DO PROGRAMA✅")
     return dados
 
-CAMINHO_ARQUIVO = "Faculdade/biblioteca/biblioteca.json"
+CAMINHO_ARQUIVO = "biblioteca/biblioteca.json"
 dados = carregar_dados(CAMINHO_ARQUIVO)
 usuarios_salvos = dados.get("usuarios", [])
 livros_salvos = dados.get("livros", [])
